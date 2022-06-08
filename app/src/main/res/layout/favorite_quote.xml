@@ -1,0 +1,57 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginVertical="10dp"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/item_layout"
+    >
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:text="Favorite Quote:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/Green"
+            android:alpha="0.86"
+            android:id="@+id/toxicCommentTV"
+
+            tools:ignore="RtlCompat" />
+
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/item_QT_description"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:text="Quote"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+
+        />
+</LinearLayout>
+</androidx.cardview.widget.CardView>
